@@ -8,7 +8,7 @@ import com.typesafe.config.ConfigFactory
 object Config {
 
   val WORKERS_NUMBER = ConfigFactory.load().getInt("application.workers.number")
-  val MESSAGING_FRAMEWORK = ConfigFactory.load().getString("application.messaging.queue")
+  val MESSAGING_FRAMEWORK = ConfigFactory.load().getString("application.messaging.system")
 
   val RABBITMQ_URI = ConfigFactory.load().getString("rabbitmq.server.amqp")
   val RABBITMQ_EXCHANGE_TYPE = ConfigFactory.load().getString("rabbitmq.exchange.type")
