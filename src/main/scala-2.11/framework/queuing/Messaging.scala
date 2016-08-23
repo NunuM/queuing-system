@@ -39,7 +39,7 @@ object Messaging {
     */
   def getBrokerInstance(): BrokerManager = messaging match {
     case null =>
-      messaging = Messaging(Config.MESSAGING_FRAMEWORK)
+      messaging = Messaging(Config.MESSAGING_SYSTEM)
       messaging
     case _ => messaging
   }
